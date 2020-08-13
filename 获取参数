@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+</head>
+
+<body></body>
+<script>
+  function mySort() {
+    var tags = new Array(); //使用数组作为参数存储容器
+    for (let i = 0; i < arguments.length; i++) {
+      tags.push(arguments[i]);
+    }
+    // [...tags] = arguments;//点语法获取
+    tags.sort(function (num1, num2) {
+      return num1 - num2;
+    });
+    return tags; //返回已经排序的数组
+  }
+  var result = mySort(50, 11, 16, 32, 24, 99, 57, 100);
+  console.info(result); //显示结果
+</script>
+
+</html>
