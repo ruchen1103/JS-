@@ -14,7 +14,8 @@
     for (let i = 0; i < arguments.length; i++) {
       tags.push(arguments[i]);
     }
-    // [...tags] = arguments;//点语法获取
+    //tags=[...arguments];
+    // [...tags] = arguments;//两种点语法获取
     tags.sort(function (num1, num2) {
       return num1 - num2;
     });
